@@ -1,17 +1,27 @@
 <script lang="ts">
+  import "../app.css"
+  import { swipe } from "svelte-gestures"
+  import { page } from "$app/stores"
+
   import Sidebar from "$lib/components/Sidebar.svelte"
 
-  import { page } from "$app/stores"
-  $: shouldAnimateButton = $page.route.id == "/"
+  let toggleSidebar: any
 
-  import "../app.css"
+  let handleSwipe = (e) => {
+    shouldAnimateButton && toggleSidebar()
+  }
+
+  $: shouldAnimateButton = $page.route.id == "/"
 </script>
 
 <svelte:head>
   <title>GabesDev</title>
 </svelte:head>
 
-<div class="flex flex-row items-center justify-between h-screen bg-gray-100">
+<div
+  class="flex flex-row items-center justify-between h-screen bg-gray-100"
+  use:swipe on:swipe={handleSwipe}
+>
   <a
     href="https://www.linkedin.com/in/gabesdev"
     class="absolute z-10 p-3 w-fit rounded-xl top-5 right-5 shadow-sm-nm hover:shadow-sm-nm-pressed"
@@ -19,8 +29,8 @@
   >
     Get in touch!
   </a>
-  
-  <Sidebar {shouldAnimateButton} />
+
+  <Sidebar {shouldAnimateButton} bind:toggle={toggleSidebar} />
 
   <main
     class="relative flex flex-col items-center justify-center w-full h-full"

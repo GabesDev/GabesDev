@@ -7,7 +7,7 @@
 <p>Some of the projects I've worked on.</p>
 
 <div
-  class="flex flex-wrap items-stretch w-full gap-10 p-5 mt-8 text-left justify-evenly"
+  class="flex flex-wrap items-stretch w-full gap-10 p-5 pb-16 mt-8 text-left justify-evenly"
 >
   {#each portfolio as { name, description, image, tech, techDetails, address, responsibilities }}
     <Card
