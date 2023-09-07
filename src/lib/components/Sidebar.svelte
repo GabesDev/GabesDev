@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores"
 
-  import IconFacebook from "~icons/cib/facebook"
+  import IconMastodon from "~icons/cib/mastodon"
   import IconGithub from "~icons/cib/github"
   import IconLinkedin from "~icons/cib/linkedin"
   import IconInstagram from "~icons/cib/instagram"
@@ -114,10 +114,11 @@
     </a>
     <a
       class="flex items-center justify-center"
-      href="https://facebook.com/gabbrother"
+      rel="me"
+      href="https://mastodon.social/@gabesdev"
       target="_blank"
     >
-      <IconFacebook class="w-6 h-6" />
+      <IconMastodon class="w-6 h-6" />
     </a>
   </div>
 </aside>
