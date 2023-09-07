@@ -9,7 +9,7 @@
   new technologies.
 </p>
 <div
-  class="flex flex-wrap items-stretch justify-center w-full gap-10 p-5 pb-16 mt-8 text-left"
+  class="flex flex-wrap items-stretch justify-center w-full gap-10 p-5 mt-8 text-left pb-28"
 >
   {#each labs as { name, description, image, tech, code, address }}
     <Card
