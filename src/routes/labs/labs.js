@@ -21,4 +21,44 @@ export const labs = [
     code: "https://github.com/GabesDev/svelte-memoria",
     address: "https://memory.gabes.dev/",
   },
+  {
+    name: "JSX Rederer [Code]",
+    description: [
+      "Tutorial Project",
+      "Wrote a JSX renderer to understand the inner functionality of React.",
+    ],
+    image: "code.png",
+    tech: "Javascript",
+    code: "https://github.com/GabesDev/jsx-renderer",
+  },
+  {
+    name: "AppStore UI [App]",
+    description: [
+      "Tutorial Project",
+      "UI focused APP, using nativewind (Tailwind for react native) and some other libraries.",
+    ],
+    image: "appstore.png",
+    tech: "React Native, NativeWind, Expo",
+    code: "https://github.com/GabesDev/react-native-storeUi",
+  },
+  {
+    name: "Login UI [App]",
+    description: [
+      "Tutorial Project",
+      "UI focused APP, using nativewind (Tailwind for react native) and some other libraries.",
+    ],
+    image: "loginui.png",
+    tech: "React Native, NativeWind, Expo",
+    code: "https://github.com/GabesDev/react-native-loginUi/",
+  },
+  {
+    name: "Expensify [App]",
+    description: [
+      "Tutorial Project",
+      "Fully functional app to learn the Back-End integration, auth (log-in/sign-up) and React Native Ui development",
+    ],
+    image: "expensify.png",
+    tech: "React Native, Firebase",
+    code: "https://github.com/GabesDev/react-native-expensify/",
+  },
 ]
