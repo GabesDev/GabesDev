@@ -1,6 +1,6 @@
 export const labs = [
   {
-    name: "Jokenpo [Rock, Paper, Scissors]",
+    name: "Jokenpo [Multiplayer Game]",
     description: [
       "Own project",
       "Written to get used to the sveltekit, state, sockets and servers.",
@@ -11,7 +11,7 @@ export const labs = [
     address: "https://jokenpo.gabes.dev/",
   },
   {
-    name: "Matching Game [pt-br]",
+    name: "Matching Game [Game]",
     description: [
       "Tutorial project",
       "Written to get used to the sveltekit way of managing state and reactivity.",
