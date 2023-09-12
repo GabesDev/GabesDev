@@ -32,6 +32,16 @@ export const labs = [
     code: "https://github.com/GabesDev/jsx-renderer",
   },
   {
+    name: "Food Recipes [App]",
+    description: [
+      "Tutorial Project",
+      "Fully functional app using free APIs and animations.",
+    ],
+    image: "foodrecipe.png",
+    tech: "React Native, NativeWind, Expo, Reanimate, REST API",
+    code: "https://github.com/GabesDev/react-native-recipe-app",
+  },
+  {
     name: "AppStore UI [App]",
     description: [
       "Tutorial Project",
