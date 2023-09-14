@@ -42,6 +42,16 @@ export const labs = [
     code: "https://github.com/GabesDev/react-native-recipe-app",
   },
   {
+    name: "Expensify [App]",
+    description: [
+      "Tutorial Project",
+      "Fully functional app to study the Back-End integration, auth (log-in/sign-up) and React Native Ui development",
+    ],
+    image: "expensify.png",
+    tech: "React Native, Firebase",
+    code: "https://github.com/GabesDev/react-native-expensify/",
+  },
+  {
     name: "AppStore UI [App]",
     description: [
       "Tutorial Project",
@@ -52,6 +62,16 @@ export const labs = [
     code: "https://github.com/GabesDev/react-native-storeUi",
   },
   {
+    name: "Animated Login UI [App]",
+    description: [
+      "Tutorial Project",
+      "UI focused APP, using nativewind (Tailwind for react native) and animation libraries.",
+    ],
+    image: "login-animated.png",
+    tech: "React Native, NativeWind, Expo, React Native Animated",
+    code: "https://github.com/GabesDev/react-native-animated-loginUi",
+  },
+  {
     name: "Login UI [App]",
     description: [
       "Tutorial Project",
@@ -60,15 +80,5 @@ export const labs = [
     image: "loginui.png",
     tech: "React Native, NativeWind, Expo",
     code: "https://github.com/GabesDev/react-native-loginUi/",
-  },
-  {
-    name: "Expensify [App]",
-    description: [
-      "Tutorial Project",
-      "Fully functional app to learn the Back-End integration, auth (log-in/sign-up) and React Native Ui development",
-    ],
-    image: "expensify.png",
-    tech: "React Native, Firebase",
-    code: "https://github.com/GabesDev/react-native-expensify/",
   },
 ]
