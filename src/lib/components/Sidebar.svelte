@@ -44,7 +44,7 @@
   </button>
 
   <section
-    class="fixed z-40 h-full bg-gray-900 lg:w-96 w-[85%] lg:relative lg:-translate-x-0"
+    class="fixed z-40 h-full bg-gray-900 lg:w-96 w-[85%] lg:relative lg:-translate-x-0 duration-500"
     class:-translate-x-[calc(100%+1px)]={!$isMenuOpen}
   >
     <header
