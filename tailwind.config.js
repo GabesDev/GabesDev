@@ -1,30 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
+  safelist: [
+    "2xl:grid-cols-1",
+    "2xl:grid-cols-2",
+    "2xl:grid-cols-3",
+    "2xl:grid-cols-4",
+    "2xl:grid-cols-4",
+    "2xl:grid-cols-5",
+    "2xl:grid-cols-6",
+    "2xl:grid-cols-7",
+    "2xl:grid-cols-8",
+    "2xl:grid-cols-9",
+    "2xl:grid-cols-10",
+    "fill-white",
+    "w-[33%]",
+    "w-[50%]",
+    "w-[100%]",
+    "-translate-x-[calc(100%+1px)]"
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        taberna: ["Taberna", "cursive"],
+      },
       boxShadow: {
-        nm: "5px 5px 10px #a5a6a7, -5px -5px 10px #ffffff;",
-        "nm-pressed":
-          "inset 5px 5px 10px #dddee0, inset -5px -5px 10px #ffffff;",
-        "sm-nm": "2px 2px 4px #a5a6a7, -2px -2px 4px #ffffff;",
-        "sm-nm-pressed":
-          "inset 2px 2px 4px #dddee0, inset -2px -2px 4px #ffffff;",
-      },
-      animation: {
-        customPulse: "customPulse 6s 3 ease",
-      },
-      keyframes: {
-        customPulse: {
-          "0%, 40%, 60%, 100%": {
-            scale: "1",
-            boxShadow: "2px 2px 4px #a5a6a7, -2px -2px 4px #ffffff",
-          },
-          "50%": {
-            scale: "1.2",
-            boxShadow: "9px 9px 11px #a5a6a7, -9px -9px 8px #ffffff",
-          },
-        },
+        custom: "0px 0px 30px 5px rgba(0, 0, 0, .2)",
       },
     },
   },

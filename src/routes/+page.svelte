@@ -1,36 +1,45 @@
 <script>
-  import IconHTML from "~icons/logos/html-5"
-  import IconCSS from "~icons/logos/css-3"
-  import IconJS from "~icons/logos/javascript"
-  import IconXML from "~icons/vscode-icons/file-type-xml"
-  import IconSass from "~icons/logos/sass"
-  import IconTS from "~icons/logos/typescript-icon"
-  import IconReact from "~icons/logos/react"
-  import IconSvelte from "~icons/logos/svelte-icon"
-  import IconVue from "~icons/logos/vue"
-  import IconSF from "~icons/logos/salesforce"
-  import IconNode from "~icons/logos/nodejs-icon"
-  import IconSitecore from "~icons/simple-icons/sitecore"
-  import Circle from "$lib/components/Circle.svelte"
+  import { languages, softSkills, techCards } from "$lib/staticData"
+  import CardContainer from "$lib/components/Cards.svelte"
 </script>
 
-<Circle cssClasses=" hidden lg:block" />
+<main>
+  <section
+    class="relative px-10 py-16 text-lg bg-gradient-to-r from-gray-900 to-gray-950"
+  >
+    <h1 class="mb-10 text-4xl text-blue-400">Hi! My name is Gabriel</h1>
+    <p>
+      With more than 15 years of experience in web development, I became a
+      full-time front-end developer in 2016. I've worked in numerous fields of
+      web development - including but not restricted to mail marketing creation,
+      development of internal tools for companies, development of complex
+      e-commerce systems, and more.
+    </p>
+    <p>
+      I'm also usually responsible for the training sessions for new team
+      members and the integration between the front and back-end. I make use of
+      my back-end and database knowledge for personal projects.
+    </p>
+    <p>
+      In addition to code quality, I believe the success of a project is
+      directly related to the team's relationship, communication, and knowledge
+      sharing. Those are the resources I always bring into the projects I'm
+      working on.
+    </p>
+  </section>
 
-<div class="relative z-10">
-  <h1 class="text-5xl text-center">Hi! I'm Gabes 🧑‍💻</h1>
-  <p class="my-8 text-center">A frontend engineer, focused on SFCC projects.</p>
-  <div class="grid grid-cols-4 gap-4 mt-5">
-    <IconHTML class="w-20 h-20" />
-    <IconCSS class="w-20 h-20" />
-    <IconJS class="w-20 h-20" />
-    <IconNode class="w-20 h-20" />
-    <IconXML class="w-20 h-20" />
-    <IconSass class="w-20 h-20" />
-    <IconTS class="w-20 h-20" />
-    <IconSF class="w-20 h-20" />
-    <IconSvelte class="w-20 h-20" />
-    <IconReact class="w-20 h-20" />
-    <IconVue class="w-20 h-20" />
-    <IconSitecore class="w-20 h-20 text-red-600" />
-  </div>
-</div>
+  <section class="p-10 bg-gray-800">
+    <h2 class="mt-5 mb-10 text-2xl text-blue-400">Technologies</h2>
+    <CardContainer cols={4} collection={techCards} />
+  </section>
+
+  <section class="p-10 bg-gray-800">
+    <h2 class="mt-5 mb-10 text-2xl text-blue-400">Languages</h2>
+    <CardContainer cols={2} collection={languages} />
+  </section>
+
+  <section class="p-10 bg-gradient-to-r from-gray-900 to-gray-950">
+    <h2 class="mt-5 mb-10 text-2xl text-blue-400">Soft skills</h2>
+    <CardContainer cols={5} collection={softSkills} nameOnly={true} />
+  </section>
+</main>

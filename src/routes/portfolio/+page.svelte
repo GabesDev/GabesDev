@@ -1,23 +1,174 @@
 <script>
-  import Card from "$lib/components/Card.svelte"
-  import { portfolio } from "./portfolio"
+  //@ts-nocheck
+  import { swipe } from "svelte-gestures"
+  import { fly } from "svelte/transition"
+  import { page } from "$app/stores"
+  import { goto, afterNavigate } from "$app/navigation"
+  import { projects } from "$lib/staticData"
+
+  import IconNext from "~icons/flat-color-icons/next"
+  import IconPrevious from "~icons/flat-color-icons/previous"
+
+  import PortfolioContent from "$lib/components/PortfolioContent.svelte"
+
+  let containerWidth
+  let contentAnimation
+
+  let slidesToShowOnHeader = 1
+
+  let currentProjectIndex = 0
+  let currentHeaderPosition = 0
+
+  $: {
+    if (containerWidth > 1000) slidesToShowOnHeader = 3
+    if (containerWidth <= 1000 && containerWidth >= 720)
+      slidesToShowOnHeader = 2
+    if (containerWidth < 720) slidesToShowOnHeader = 1
+  }
+
+  // Stops the header slider from going too far (avoids empty space)
+  $: lastHeaderIndex = projects.length - slidesToShowOnHeader
+
+  // Moves the header when a slider is selected
+  $: {
+    currentHeaderPosition =
+      currentProjectIndex >= lastHeaderIndex
+        ? lastHeaderIndex
+        : currentProjectIndex
+  }
+
+  let chooseContentSlider = (index) => {
+    if (index < 0 || index >= projects.length) return
+
+    contentAnimation = currentProjectIndex > index ? 1 : -1
+
+    currentProjectIndex = index
+    $page.url.searchParams.set("project", projects[index].name)
+    goto(`?${$page.url.searchParams.toString()}`)
+  }
+
+  let moveHeaderPosition = (index) => {
+    if (index < 0 || index > projects.length || index > lastHeaderIndex) return
+
+    currentHeaderPosition = index
+  }
+
+  let handleButtonClick = (direction) => {
+    if (slidesToShowOnHeader == 1) {
+      chooseContentSlider(currentProjectIndex + direction)
+    } else {
+      moveHeaderPosition(currentHeaderPosition + direction)
+    }
+  }
+
+  let handleSwipe = (e, selectContent = true) => {
+    let directionString = e.detail.direction
+    let direction = directionString == "left" ? 1 : -1
+
+    if (selectContent == true || slidesToShowOnHeader == 1) {
+      chooseContentSlider(currentProjectIndex + direction)
+    } else {
+      moveHeaderPosition(currentHeaderPosition + direction)
+    }
+  }
+
+  afterNavigate(() => {
+    let projectName = $page.url.searchParams.get("project")
+    if (!projectName) return
+
+    currentProjectIndex = projects.findIndex((x) => x.name == projectName)
+
+    if (currentProjectIndex == -1) {
+      //Doesn't exist, remove from url and load /portfolio
+      $page.url.searchParams.delete("project")
+      goto(`?${$page.url.searchParams.toString()}`)
+      return
+    }
+  })
 </script>
 
-<h1 class="text-5xl">Portfolio</h1>
-<p>Some of the projects I've worked on.</p>
+<section bind:clientWidth={containerWidth}>
+  <nav
+    class="flex items-center"
+    use:swipe={{ timeframe: 300, minSwipeDistance: 60, touchAction: "pan-y" }}
+    on:swipe={(e) => handleSwipe(e, false)}
+  >
+    <button
+      on:click={() => handleButtonClick(-1)}
+      class:opacity-30={currentHeaderPosition <= 0}
+      disabled={currentHeaderPosition <= 0}
+    >
+      <IconPrevious class="w-8 h-8 md:w-20 md:h-20" />
+    </button>
+    <header class="max-w-full overflow-hidden">
+      <div
+        class="flex"
+        style="transform: translate(-{currentHeaderPosition *
+          Math.floor(100 / slidesToShowOnHeader)}%)"
+      >
+        {#each projects as project, i}
+          <button
+            on:click={() => chooseContentSlider(i)}
+            class="p-10 w-[{Math.floor(
+              100 / slidesToShowOnHeader
+            )}%] shrink-0 {i == currentProjectIndex
+              ? 'active bg-white/20'
+              : ''}"
+          >
+            <img
+              src={project.logo}
+              alt={project.name}
+              class="w-20 h-20 mb-4 rounded-full"
+            />
+            <div class="text-left">
+              <p class="text-xl text-white">{project.name}</p>
+              <p class="text-gray-300">{project.position}</p>
+              <p class="text-sm">{project.date}</p>
+            </div>
+          </button>
+        {/each}
+      </div>
+    </header>
 
-<div
-  class="flex flex-wrap items-stretch justify-center w-full gap-10 p-5 mt-8 text-left pb-28"
->
-  {#each portfolio as { name, description, image, tech, techDetails, address, responsibilities }}
-    <Card
-      {name}
-      {description}
-      image={`/portfolio/${image}`}
-      {tech}
-      {techDetails}
-      {address}
-      {responsibilities}
-    />
+    <button
+      on:click={() => handleButtonClick(1)}
+      class:opacity-30={currentHeaderPosition >= lastHeaderIndex}
+      disabled={currentHeaderPosition >= lastHeaderIndex}
+    >
+      <IconNext class="w-8 h-8 md:w-20 md:h-20" />
+    </button>
+  </nav>
+
+  {#each projects as project, i}
+    {#if i == currentProjectIndex}
+      <div
+        in:fly={{ x: -500 * contentAnimation, duration: 200, opacity: 0, delay: 200 }}
+        use:swipe={{
+          timeframe: 300,
+          minSwipeDistance: 60,
+          touchAction: "pan-y",
+        }}
+        on:swipe={(e) => handleSwipe(e)}
+      >
+        <PortfolioContent {project} />
+      </div>
+    {/if}
   {/each}
-</div>
+</section>
+
+<style>
+  .active {
+    position: relative;
+  }
+  .active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #111827;
+    bottom: 0;
+  }
+</style>

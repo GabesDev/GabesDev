@@ -1,24 +1,22 @@
 <script>
-  import Card from "$lib/components/Card.svelte"
-  import { labs } from "./labs"
+  import Card from "$lib/components/LabsCard.svelte"
+  import { labs } from "$lib/staticData"
 </script>
 
-<h1 class="text-5xl">Labs</h1>
-<p>
-  Here's where I list small side-projects and tutorials I followed to practice
-  new technologies.
-</p>
-<div
-  class="flex flex-wrap items-stretch justify-center w-full gap-10 p-5 mt-8 text-left pb-28"
+<section
+  class="relative px-10 py-16 text-lg bg-gradient-to-r from-gray-900 to-gray-950"
 >
-  {#each labs as { name, description, image, tech, code, address }}
-    <Card
-      {name}
-      {description}
-      image={`/labs/${image}`}
-      {tech}
-      {code}
-      {address}
-    />
-  {/each}
-</div>
+  <h1 class="mb-10 text-4xl text-blue-400">My Labs</h1>
+  <p>
+    Those are my fun side projects. Most of them don't leave my localhost, but
+    the ones who do will be here.
+  </p>
+  <p>
+    You'll be able to see some of my code, and things I'm studying at the
+    moment.
+  </p>
+</section>
+
+<section class="p-10 bg-gray-800">
+  <Card collection={labs} cols={3} />
+</section>

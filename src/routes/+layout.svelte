@@ -1,42 +1,35 @@
-<script lang="ts">
-  import "../app.css"
-  import { swipe } from "svelte-gestures"
-  import { page } from "$app/stores"
-
+<script>
+  import Footer from "$lib/components/Footer.svelte"
   import Sidebar from "$lib/components/Sidebar.svelte"
+  import { fly } from "svelte/transition"
+  import "../app.css"
 
-  let toggleSidebar: any
-
-  let handleSwipe = (e) => {
-    shouldAnimateButton && toggleSidebar()
-  }
-
-  $: shouldAnimateButton = $page.route.id == "/"
+  export let data
 </script>
 
 <svelte:head>
   <title>GabesDev</title>
+  <meta
+    name="description"
+    content="Welcome to my portfolio. Know more about my skills and get in touch!"
+  />
+  <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)">
 </svelte:head>
 
 <div
-  class="flex flex-row items-center justify-between h-screen bg-gray-100"
-  use:swipe on:swipe={handleSwipe}
+  class="flex flex-col items-center justify-center w-full h-full 2xl:px-16 2xl:py-16 bg-gradient-to-tr from-purple-900 to-blue-200"
 >
-  <a
-    href="https://www.linkedin.com/in/gabesdev"
-    class="absolute z-10 p-3 w-fit rounded-xl top-5 right-5 shadow-sm-nm hover:shadow-sm-nm-pressed"
-    target="_blank"
+  <section
+    class="w-full lg:flex bg-gray-950 shadow-custom"
   >
-    Get in touch!
-  </a>
+    <Sidebar />
 
-  <Sidebar {shouldAnimateButton} bind:toggle={toggleSidebar} />
+    {#key data.url}
+      <div in:fly={{ x: -100, duration: 500, delay: 0 }} class="flex-1 w-full overflow-hidden">
+        <slot />
+      </div>
+    {/key}
+  </section>
 
-  <main
-    class="relative flex flex-col items-center justify-center w-full h-full"
-  >
-    <div class="px-4 mt-20 overflow-y-auto text-center">
-      <slot />
-    </div>
-  </main>
+  <Footer />
 </div>
