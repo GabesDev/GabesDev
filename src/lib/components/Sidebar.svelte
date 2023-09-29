@@ -118,7 +118,7 @@
         <a
           on:click={toggleSidebar}
           href="/"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 {$page
+          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 {$page
             .url.pathname === '/'
             ? 'bg-gray-800'
             : 'bg-gray-900'}"
@@ -128,7 +128,7 @@
         <a
           on:click={toggleSidebar}
           href="/portfolio"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 {$page.url.pathname.includes(
+          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 {$page.url.pathname.includes(
             '/portfolio'
           )
             ? 'bg-gray-800'
@@ -139,7 +139,7 @@
         <a
           on:click={toggleSidebar}
           href="/labs"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 {$page
+          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 {$page
             .url.pathname === '/labs'
             ? 'bg-gray-800'
             : 'bg-gray-900'}"
@@ -151,7 +151,7 @@
           href="/[en] Gabriel Azevedo - 2023.pdf"
           target="_blank"
           download="[en] Gabriel Azevedo - 2023.pdf"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 bg-gray-900"
+          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 bg-gray-900"
         >
           <IconDownload class="w-6 h-6 mr-4" /> My CV
         </a>

@@ -20,7 +20,7 @@
           delay: 200 + 150 * index,
           easing: backInOut,
         }}
-        class="relative flex flex-col bg-gray-900 border border-blue-400 border-solid md:hover:bg-white/10 md:hover:scale-105 md:hover:shadow-lg"
+        class="relative flex flex-col duration-500 bg-gray-900 border border-blue-400 border-solid md:hover:bg-white/10 md:hover:scale-105 md:hover:shadow-lg"
       >
         <img
           src="/labs/{item.image}"

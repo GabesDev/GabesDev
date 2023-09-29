@@ -102,7 +102,7 @@
     </button>
     <header class="max-w-full overflow-hidden">
       <div
-        class="flex"
+        class="flex duration-500"
         style="transform: translate(-{currentHeaderPosition *
           Math.floor(100 / slidesToShowOnHeader)}%)"
       >
