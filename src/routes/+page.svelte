@@ -28,12 +28,16 @@
     </p>
   </section>
 
-  <section class="p-10 bg-neutral-800">
+  <section
+    class="p-10 border-t-2 border-solid bg-neutral-800 border-t-white/25"
+  >
     <h2 class="mt-5 mb-10 text-2xl text-blue-400">Technologies</h2>
     <CardContainer cols={4} collection={techCards} />
   </section>
 
-  <section class="p-10 bg-neutral-800">
+  <section
+    class="p-10 border-b-2 border-solid bg-neutral-800 border-b-white/25"
+  >
     <h2 class="mt-5 mb-10 text-2xl text-blue-400">Languages</h2>
     <CardContainer cols={2} collection={languages} />
   </section>

@@ -89,7 +89,7 @@
 
 <section bind:clientWidth={containerWidth}>
   <nav
-    class="flex items-center"
+    class="flex items-center bg-neutral-900"
     use:swipe={{ timeframe: 300, minSwipeDistance: 60, touchAction: "pan-y" }}
     on:swipe={(e) => handleSwipe(e, false)}
   >
@@ -98,7 +98,7 @@
       class:opacity-30={currentHeaderPosition <= 0}
       disabled={currentHeaderPosition <= 0}
     >
-      <IconPrevious class="w-8 h-8 md:w-20 md:h-20" />
+      <IconPrevious class="w-8 h-8 md:w-16 md:h-16" />
     </button>
     <header class="max-w-full overflow-hidden">
       <div
@@ -112,7 +112,10 @@
             class="p-10 w-[{Math.floor(
               100 / slidesToShowOnHeader
             )}%] shrink-0 {i == currentProjectIndex
-              ? 'active bg-white/20'
+              ? `relative bg-white/5 
+              after:block after:absolute after:w-0 after:h-0 after:border-x-[10px] after:border-x-transparent after:border-b-[10px] after:bottom-0 after:border-b-neutral-950
+              before:block before:absolute before:-bottom-24 before:rounded-full before:w-[70%] before:shadow-active before:h-20
+              `
               : ''}"
           >
             <img
@@ -135,7 +138,7 @@
       class:opacity-30={currentHeaderPosition >= lastHeaderIndex}
       disabled={currentHeaderPosition >= lastHeaderIndex}
     >
-      <IconNext class="w-8 h-8 md:w-20 md:h-20" />
+      <IconNext class="w-8 h-8 md:w-16 md:h-16" />
     </button>
   </nav>
 
@@ -155,20 +158,3 @@
     {/if}
   {/each}
 </section>
-
-<style>
-  .active {
-    position: relative;
-  }
-  .active::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #111827;
-    bottom: 0;
-  }
-</style>

@@ -24,6 +24,8 @@ export default {
       boxShadow: {
         container: "25px 25px 50px 25px rgba(0, 0, 0, 0.5)",
         aside: "27px 18px 36px -18px rgba(0, 0, 0, 0.4)",
+        active: "0px -20px 50px rgba(255,255,255, 0.4)",
+        inner: "inset 0px 10px 10px 0px rgb(0 0 0 / 50%)"
       },
     },
   },
