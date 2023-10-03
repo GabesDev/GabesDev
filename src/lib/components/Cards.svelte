@@ -41,7 +41,7 @@
         in:fly={{
           y: 50,
           duration: 500,
-          delay: 100 + 100 * index,
+          delay: 100 * index,
           easing: backInOut,
         }}
         class="relative bg-blue-400/25 dark:bg-blue-400/10 card hover:before:opacity-100 group-hover:after:opacity-100 after:z-10 after:h-full after:left-0 after:opacity-0 after:absolute after:top-0 after:transition-opacity after:w-full before:z-30 before:h-full before:left-0 before:opacity-0 before:absolute before:top-0 before:transition-opacity before:w-full"
