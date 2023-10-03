@@ -7,19 +7,6 @@
   export let data
 </script>
 
-<svelte:head>
-  <title>GabesDev</title>
-  <meta
-    name="description"
-    content="Welcome to my portfolio. Know more about my skills and get in touch!"
-  />
-  <meta
-    name="theme-color"
-    content="#030712"
-    media="(prefers-color-scheme: dark)"
-  />
-</svelte:head>
-
 <div
   class="flex flex-col items-center justify-center w-full h-full 2xl:px-16 2xl:py-16 bg-gradient-to-tr from-purple-900 to-blue-200"
 >
