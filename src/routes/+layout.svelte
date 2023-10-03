@@ -13,19 +13,26 @@
     name="description"
     content="Welcome to my portfolio. Know more about my skills and get in touch!"
   />
-  <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)">
+  <meta
+    name="theme-color"
+    content="#030712"
+    media="(prefers-color-scheme: dark)"
+  />
 </svelte:head>
 
 <div
   class="flex flex-col items-center justify-center w-full h-full 2xl:px-16 2xl:py-16 bg-gradient-to-tr from-purple-900 to-blue-200"
 >
   <section
-    class="w-full lg:flex bg-neutral-950 shadow-container"
+    class="w-full lg:flex dark:bg-neutral-950 bg-neutral-200 shadow-container"
   >
     <Sidebar />
 
     {#key data.url}
-      <div in:fly={{ x: -100, duration: 500, delay: 0 }} class="flex-1 w-full overflow-hidden">
+      <div
+        in:fly={{ x: -100, duration: 500, delay: 0 }}
+        class="flex-1 w-full overflow-hidden"
+      >
         <slot />
       </div>
     {/key}

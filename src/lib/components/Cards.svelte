@@ -44,10 +44,10 @@
           delay: 100 + 100 * index,
           easing: backInOut,
         }}
-        class="relative bg-blue-400/10 card hover:before:opacity-100 group-hover:after:opacity-100 after:z-10 after:h-full after:left-0 after:opacity-0 after:absolute after:top-0 after:transition-opacity after:w-full before:z-30 before:h-full before:left-0 before:opacity-0 before:absolute before:top-0 before:transition-opacity before:w-full"
+        class="relative bg-blue-400/25 dark:bg-blue-400/10 card hover:before:opacity-100 group-hover:after:opacity-100 after:z-10 after:h-full after:left-0 after:opacity-0 after:absolute after:top-0 after:transition-opacity after:w-full before:z-30 before:h-full before:left-0 before:opacity-0 before:absolute before:top-0 before:transition-opacity before:w-full"
       >
         <div
-          class="relative z-20 flex bg-neutral-900 inset-px w-[calc(100%-2px)] h-[calc(100%-2px)] items-center p-1"
+          class="relative z-20 flex dark:bg-neutral-900 bg-neutral-100 inset-px w-[calc(100%-2px)] h-[calc(100%-2px)] items-center p-1"
         >
           {#if item.icon}
             <svelte:component
@@ -63,7 +63,7 @@
               alt={item.name}
             />
           {/if}
-          <div class="{nameOnly ? '' : 'p-2'} text-white">
+          <div class="{nameOnly ? '' : 'p-2'} dark:text-white text-neutral-500">
             {#if item.name}
               <p class="{nameOnly ? 'text-lg' : 'text-2xl'} ">{item.name}</p>
             {/if}
@@ -71,7 +71,7 @@
               <p class="text-sm"><b>Level: </b>{item.level}</p>
             {/if}
             {#if item.description}
-              <p class="text-sm text-neutral-300">
+              <p class="text-sm dark:text-neutral-300 text-neutral-400">
                 {@html item.description}
               </p>
             {/if}
@@ -106,21 +106,3 @@
     {/if}
   {/each}
 </div>
-
-<style>
-  .card::before {
-    background: radial-gradient(
-      800px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.06),
-      transparent 40%
-    );
-  }
-
-  .card::after {
-    background: radial-gradient(
-      600px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.4),
-      transparent 40%
-    );
-  }
-</style>

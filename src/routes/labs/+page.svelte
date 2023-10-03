@@ -4,7 +4,7 @@
 </script>
 
 <section
-  class="relative px-10 py-16 text-lg bg-gradient-to-r from-neutral-900 to-neutral-950"
+  class="relative px-10 py-16 text-lg bg-gradient-to-r dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-neutral-200"
 >
   <h1 class="mb-10 text-4xl text-blue-400">My Labs</h1>
   <p>
@@ -17,6 +17,6 @@
   </p>
 </section>
 
-<section class="p-10 border-t-2 border-solid bg-neutral-800 border-t-white/25">
+<section class="p-10 border-t-2 border-solid dark:bg-neutral-800 bg-neutral-50 border-t-white/25">
   <Card collection={labs} cols={3} />
 </section>

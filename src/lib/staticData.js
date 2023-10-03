@@ -366,7 +366,7 @@ export let projects = [
         {
           icon: IconGithub,
           name: "GitHub",
-          extraClass: "[&>path]:fill-white",
+          extraClass: "dark:[&>path]:fill-white",
         },
         {
           icon: IconPwa,

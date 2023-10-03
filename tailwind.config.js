@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: ["./src/**/*.{html,js,svelte,ts}"],
   safelist: [
     "2xl:grid-cols-1",
@@ -23,9 +24,11 @@ export default {
     extend: {
       boxShadow: {
         container: "25px 25px 50px 25px rgba(0, 0, 0, 0.5)",
-        aside: "27px 18px 36px -18px rgba(0, 0, 0, 0.4)",
-        active: "0px -20px 50px rgba(255,255,255, 0.4)",
-        inner: "inset 0px 10px 10px 0px rgb(0 0 0 / 50%)"
+        darkaside: "27px 18px 36px -18px rgba(0, 0, 0, 0.4)",
+        darkactive: "0px -20px 50px rgba(255,255,255, 0.4)",
+        darkinner: "inset 0px 10px 10px 0px rgb(0 0 0 / 50%)",
+        aside: "30px 0px 20px -20px rgba(0, 0, 0, 0.1)",
+        inner: "inset 0px 10px 15px 0px rgb(0 0 0 / 10%)",
       },
     },
   },

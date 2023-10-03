@@ -89,7 +89,7 @@
 
 <section bind:clientWidth={containerWidth}>
   <nav
-    class="flex items-center bg-neutral-900"
+    class="flex items-center dark:bg-neutral-900 bg-neutral-100"
     use:swipe={{ timeframe: 300, minSwipeDistance: 60, touchAction: "pan-y" }}
     on:swipe={(e) => handleSwipe(e, false)}
   >
@@ -114,9 +114,9 @@
             class="p-10 w-[{Math.floor(
               100 / slidesToShowOnHeader
             )}%] shrink-0 {i == currentProjectIndex
-              ? `relative bg-white/5 
-              after:block after:absolute after:w-0 after:h-0 after:border-x-[10px] after:border-x-transparent after:border-b-[10px] after:bottom-0 after:border-b-neutral-950
-              before:block before:absolute before:-bottom-24 before:rounded-full before:w-[70%] before:shadow-active before:h-20
+              ? `relative dark:bg-white/5 bg-black/5 
+              after:block after:absolute after:w-0 after:h-0 after:border-x-[10px] after:border-x-transparent after:border-b-[10px] after:bottom-0 dark:after:border-b-neutral-950 after:border-b-neutral-300
+              before:block before:absolute before:-bottom-24 before:rounded-full before:w-[70%] before:shadow-darkactive before:h-20
               `
               : ''}"
           >
@@ -126,8 +126,8 @@
               class="w-20 h-20 mb-4 rounded-full"
             />
             <div class="text-left">
-              <p class="text-xl text-white">{project.name}</p>
-              <p class="text-neutral-300">{project.position}</p>
+              <p class="text-xl dark:text-white text-neutral-600">{project.name}</p>
+              <p class="dark:text-neutral-300 text-neutral-400">{project.position}</p>
               <p class="text-sm">{project.date}</p>
             </div>
           </button>

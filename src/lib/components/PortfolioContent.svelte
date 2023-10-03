@@ -3,7 +3,7 @@
   export let project
 </script>
 
-<main class="relative px-10 py-10 shadow-inner bg-neutral-900">
+<main class="relative px-10 py-10 shadow-inner dark:darkshadow-inner dark:bg-neutral-900 bg-neutral-100">
   <h1 class="mt-10 mb-5 text-2xl text-blue-400">About the project</h1>
   <div class="max-w-6xl">
     {#each project.content.about as p}
