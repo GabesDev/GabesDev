@@ -29,7 +29,6 @@ import IconTS from "~icons/vscode-icons/file-type-typescript-official"
 import IconVS from "~icons/logos/visual-studio"
 import IconVue from "~icons/vscode-icons/file-type-vue"
 import IconXML from "~icons/vscode-icons/file-type-xml"
-
 import IconMeditation from "~icons/mdi/meditation"
 
 import IconBrazil from "~icons/twemoji/flag-brazil"

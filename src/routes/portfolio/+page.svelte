@@ -20,9 +20,9 @@
   let currentHeaderPosition = 0
 
   $: {
-    if (containerWidth > 1000) slidesToShowOnHeader = 3
-    if (containerWidth <= 1000 && containerWidth >= 720)
-      slidesToShowOnHeader = 2
+    if (containerWidth > 1375) slidesToShowOnHeader = 4
+    if (containerWidth > 1000 && containerWidth <= 1375) slidesToShowOnHeader = 3
+    if (containerWidth >= 720 && containerWidth <= 1000) slidesToShowOnHeader = 2
     if (containerWidth < 720) slidesToShowOnHeader = 1
   }
 
@@ -105,15 +105,13 @@
       <div
         class="flex duration-500"
         style="transform: translate(-{currentHeaderPosition *
-          Math.floor(100 / slidesToShowOnHeader)}%)"
+          Math.floor(100/slidesToShowOnHeader)}%)"
       >
         {#each projects as project, i}
           <button
             aria-label="See this project"
             on:click={() => chooseContentSlider(i)}
-            class="p-10 w-[{Math.floor(
-              100 / slidesToShowOnHeader
-            )}%] shrink-0 {i == currentProjectIndex
+            class="p-10 w-[{Math.floor(100/slidesToShowOnHeader)}%] shrink-0 {i == currentProjectIndex
               ? `relative dark:bg-white/5 bg-black/5 
               after:block after:absolute after:w-0 after:h-0 after:border-x-[10px] after:border-x-transparent after:border-b-[10px] after:bottom-0 dark:after:border-b-neutral-950 after:border-b-neutral-300
               before:block before:absolute before:-bottom-24 before:rounded-full before:w-[70%] before:shadow-darkactive before:h-20
