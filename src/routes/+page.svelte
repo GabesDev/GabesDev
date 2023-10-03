@@ -5,7 +5,7 @@
 
 <main>
   <section
-    class="relative px-10 py-16 text-lg bg-gradient-to-r from-gray-900 to-gray-950"
+    class="relative px-10 py-16 text-lg bg-gradient-to-r from-neutral-900 to-neutral-950"
   >
     <h1 class="mb-10 text-4xl text-blue-400">Hi! My name is Gabriel</h1>
     <p>
@@ -28,17 +28,17 @@
     </p>
   </section>
 
-  <section class="p-10 bg-gray-800">
+  <section class="p-10 bg-neutral-800">
     <h2 class="mt-5 mb-10 text-2xl text-blue-400">Technologies</h2>
     <CardContainer cols={4} collection={techCards} />
   </section>
 
-  <section class="p-10 bg-gray-800">
+  <section class="p-10 bg-neutral-800">
     <h2 class="mt-5 mb-10 text-2xl text-blue-400">Languages</h2>
     <CardContainer cols={2} collection={languages} />
   </section>
 
-  <section class="p-10 bg-gradient-to-r from-gray-900 to-gray-950">
+  <section class="p-10 bg-gradient-to-r from-neutral-900 to-neutral-950">
     <h2 class="mt-5 mb-10 text-2xl text-blue-400">Soft skills</h2>
     <CardContainer cols={5} collection={softSkills} nameOnly={true} />
   </section>

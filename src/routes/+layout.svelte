@@ -20,7 +20,7 @@
   class="flex flex-col items-center justify-center w-full h-full 2xl:px-16 2xl:py-16 bg-gradient-to-tr from-purple-900 to-blue-200"
 >
   <section
-    class="w-full lg:flex bg-gray-950 shadow-custom"
+    class="w-full lg:flex bg-neutral-950 shadow-container"
   >
     <Sidebar />
 

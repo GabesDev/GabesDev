@@ -31,7 +31,7 @@
   <div class="fixed z-30 w-full h-full" />
 {/if}
 
-<aside use:clickOutside on:click_outside={handleClickOutside}>
+<aside use:clickOutside on:click_outside={handleClickOutside} class="z-40 shadow-aside">
   <button
     class="fixed z-50 w-10 p-2 border-none top-5 right-3 aspect-square lg:hidden"
     on:click={toggleSidebar}
@@ -44,7 +44,7 @@
   </button>
 
   <section
-    class="fixed z-40 h-full bg-gray-900 lg:w-96 w-[85%] lg:relative lg:-translate-x-0 duration-500"
+    class="fixed z-40 h-full bg-neutral-900 lg:w-96 w-[85%] lg:relative lg:-translate-x-0 duration-500"
     class:-translate-x-[calc(100%+1px)]={!$isMenuOpen}
   >
     <header
@@ -86,7 +86,7 @@
     </header>
 
     <section class="border-custom">
-      <main class="py-10 text-center bg-gray-950/50">
+      <main class="py-10 text-center bg-neutral-950/50">
         <section class="flex pl-8 lg:pl-0 lg:block">
           <img
             src="/me.jpg"
@@ -108,7 +108,7 @@
           <a
             href="https://www.linkedin.com/in/gabesdev"
             target="_blank"
-            class="px-4 py-2 text-gray-900 bg-blue-400 border-2 border-blue-400 border-solid rounded-full"
+            class="px-4 py-2 bg-blue-400 border-2 border-blue-400 border-solid rounded-full text-neutral-900"
           >
             CONNECT
           </a>
@@ -118,31 +118,31 @@
         <a
           on:click={toggleSidebar}
           href="/"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 {$page
+          class="flex items-center p-4 pl-8 font-semibold text-neutral-100 duration-500 {$page
             .url.pathname === '/'
-            ? 'bg-gray-800'
-            : 'bg-gray-900'}"
+            ? 'bg-neutral-800'
+            : 'bg-neutral-900'}"
         >
           <IconUser class="w-8 h-8 mr-4" /> Profile
         </a>
         <a
           on:click={toggleSidebar}
           href="/portfolio"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 {$page.url.pathname.includes(
+          class="flex items-center p-4 pl-8 font-semibold text-neutral-100 duration-500 {$page.url.pathname.includes(
             '/portfolio'
           )
-            ? 'bg-gray-800'
-            : 'bg-gray-900'}"
+            ? 'bg-neutral-800'
+            : 'bg-neutral-900'}"
         >
           <IconBriefcase class="w-6 h-6 mr-4" /> Portfolio
         </a>
         <a
           on:click={toggleSidebar}
           href="/labs"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 {$page
+          class="flex items-center p-4 pl-8 font-semibold text-neutral-100 duration-500 {$page
             .url.pathname === '/labs'
-            ? 'bg-gray-800'
-            : 'bg-gray-900'}"
+            ? 'bg-neutral-800'
+            : 'bg-neutral-900'}"
         >
           <IconLabs class="w-6 h-6 mr-4" /> Labs
         </a>
@@ -151,7 +151,7 @@
           href="/[en] Gabriel Azevedo - 2023.pdf"
           target="_blank"
           download="[en] Gabriel Azevedo - 2023.pdf"
-          class="flex items-center p-4 pl-8 font-semibold text-gray-100 duration-500 bg-gray-900"
+          class="flex items-center p-4 pl-8 font-semibold duration-500 text-neutral-100 bg-neutral-900"
         >
           <IconDownload class="w-6 h-6 mr-4" /> My CV
         </a>

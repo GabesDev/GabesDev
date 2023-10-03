@@ -17,15 +17,13 @@ export default {
     "w-[33%]",
     "w-[50%]",
     "w-[100%]",
-    "-translate-x-[calc(100%+1px)]"
+    "-translate-x-[calc(100%+1px)]",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        taberna: ["Taberna", "cursive"],
-      },
       boxShadow: {
-        custom: "0px 0px 30px 5px rgba(0, 0, 0, .2)",
+        container: "25px 25px 50px 25px rgba(0, 0, 0, 0.5)",
+        aside: "27px 18px 36px -18px rgba(0, 0, 0, 0.4)",
       },
     },
   },

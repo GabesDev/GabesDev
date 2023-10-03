@@ -47,7 +47,7 @@
         class="relative bg-blue-400/10 card hover:before:opacity-100 group-hover:after:opacity-100 after:z-10 after:h-full after:left-0 after:opacity-0 after:absolute after:top-0 after:transition-opacity after:w-full before:z-30 before:h-full before:left-0 before:opacity-0 before:absolute before:top-0 before:transition-opacity before:w-full"
       >
         <div
-          class="relative z-20 flex bg-gray-900 inset-px w-[calc(100%-2px)] h-[calc(100%-2px)] items-center p-1"
+          class="relative z-20 flex bg-neutral-900 inset-px w-[calc(100%-2px)] h-[calc(100%-2px)] items-center p-1"
         >
           {#if item.icon}
             <svelte:component
@@ -71,7 +71,7 @@
               <p class="text-sm"><b>Level: </b>{item.level}</p>
             {/if}
             {#if item.description}
-              <p class="text-sm text-gray-300">
+              <p class="text-sm text-neutral-300">
                 {@html item.description}
               </p>
             {/if}

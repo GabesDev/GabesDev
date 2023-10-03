@@ -20,7 +20,7 @@
           delay: 200 + 150 * index,
           easing: backInOut,
         }}
-        class="relative flex flex-col duration-500 bg-gray-900 border border-blue-400 border-solid md:hover:bg-white/10 md:hover:scale-105 md:hover:shadow-lg"
+        class="relative flex flex-col duration-500 bg-neutral-900 border border-blue-400 border-solid md:hover:bg-white/10 md:hover:scale-105 md:hover:shadow-lg"
       >
         <img
           src="/labs/{item.image}"
@@ -31,7 +31,7 @@
         <div class="flex flex-col h-full p-4 text-white">
           <p class="text-2xl">{item.name}</p>
           <p class="text-lg">{item.tech}</p>
-          <p class="text-sm text-gray-300">{@html item.description}</p>
+          <p class="text-sm text-neutral-300">{@html item.description}</p>
 
           <div class="flex items-center justify-between pt-4 mt-auto">
             {#if item.code}

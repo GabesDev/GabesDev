@@ -122,7 +122,7 @@
             />
             <div class="text-left">
               <p class="text-xl text-white">{project.name}</p>
-              <p class="text-gray-300">{project.position}</p>
+              <p class="text-neutral-300">{project.position}</p>
               <p class="text-sm">{project.date}</p>
             </div>
           </button>
