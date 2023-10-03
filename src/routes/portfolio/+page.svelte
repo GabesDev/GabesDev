@@ -94,6 +94,7 @@
     on:swipe={(e) => handleSwipe(e, false)}
   >
     <button
+      aria-label="See previous projects"
       on:click={() => handleButtonClick(-1)}
       class:opacity-30={currentHeaderPosition <= 0}
       disabled={currentHeaderPosition <= 0}
@@ -108,6 +109,7 @@
       >
         {#each projects as project, i}
           <button
+            aria-label="See this project"
             on:click={() => chooseContentSlider(i)}
             class="p-10 w-[{Math.floor(
               100 / slidesToShowOnHeader
@@ -134,6 +136,7 @@
     </header>
 
     <button
+      aria-label="See next projects"
       on:click={() => handleButtonClick(1)}
       class:opacity-30={currentHeaderPosition >= lastHeaderIndex}
       disabled={currentHeaderPosition >= lastHeaderIndex}
@@ -145,7 +148,12 @@
   {#each projects as project, i}
     {#if i == currentProjectIndex}
       <div
-        in:fly={{ x: -500 * contentAnimation, duration: 200, opacity: 0, delay: 200 }}
+        in:fly={{
+          x: -500 * contentAnimation,
+          duration: 200,
+          opacity: 0,
+          delay: 200,
+        }}
         use:swipe={{
           timeframe: 300,
           minSwipeDistance: 60,

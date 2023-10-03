@@ -34,6 +34,7 @@
 <aside use:clickOutside on:click_outside={handleClickOutside} class="z-40 shadow-aside">
   <button
     class="fixed z-50 w-10 p-2 border-none top-5 right-3 aspect-square lg:hidden"
+    aria-label="Open menu"
     on:click={toggleSidebar}
   >
     {#if !$isMenuOpen}
