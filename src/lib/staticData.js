@@ -198,7 +198,7 @@ export const labs = [
   {
     name: "Jokenpo [Multiplayer Game]",
     description: [
-      "Own project",
+      "Own project ",
       "Written to get used to the sveltekit, state, sockets, and servers.",
     ],
     image: "jokenpo.png",
@@ -209,7 +209,7 @@ export const labs = [
   {
     name: "Matching Game [Game]",
     description: [
-      "Tutorial project",
+      "Tutorial project ",
       "Written to get used to the sveltekit way of managing state and reactivity.",
     ],
     image: "memory.png",
@@ -220,7 +220,7 @@ export const labs = [
   {
     name: "JSX Rederer [Code]",
     description: [
-      "Tutorial Project",
+      "Tutorial Project ",
       "Wrote a JSX renderer to understand the inner functionality of React.",
     ],
     image: "code.png",
@@ -230,7 +230,7 @@ export const labs = [
   {
     name: "Food Recipes [App]",
     description: [
-      "Tutorial Project",
+      "Tutorial Project ",
       "Fully functional app using free APIs and animations.",
     ],
     image: "foodrecipe.png",
@@ -240,7 +240,7 @@ export const labs = [
   {
     name: "Expensify [App]",
     description: [
-      "Tutorial Project",
+      "Tutorial Project ",
       "Fully functional app to study the Back-End integration, auth (log-in/sign-up) and React Native UI development",
     ],
     image: "expensify.png",
@@ -250,7 +250,7 @@ export const labs = [
   {
     name: "AppStore UI [App]",
     description: [
-      "Tutorial Project",
+      "Tutorial Project ",
       "UI-focused APP, using nativewind (Tailwind for react native) and some other libraries.",
     ],
     image: "appstore.png",
@@ -260,7 +260,7 @@ export const labs = [
   {
     name: "Animated Login UI [App]",
     description: [
-      "Tutorial Project",
+      "Tutorial Project ",
       "UI-focused APP, using nativewind (Tailwind for react native) and animation libraries.",
     ],
     image: "login-animated.png",
@@ -270,7 +270,7 @@ export const labs = [
   {
     name: "Login UI [App]",
     description: [
-      "Tutorial Project",
+      "Tutorial Project ",
       "UI-focused APP, using nativewind (Tailwind for react native) and some other libraries.",
     ],
     image: "loginui.png",
