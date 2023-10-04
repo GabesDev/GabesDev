@@ -149,7 +149,7 @@ export const techCards = [
   {
     image: "/images/epi.jpeg",
     name: "Episerver",
-    description: "Years of experience: 2+",
+    description: "Years of experience: 1+",
   },
   {
     icon: IconOptimizely,
