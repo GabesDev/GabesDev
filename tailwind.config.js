@@ -16,6 +16,7 @@ export default {
     "2xl:grid-cols-10",
     "fill-white",
     "w-[33%]",
+    "w-[25%]",
     "w-[50%]",
     "w-[100%]",
     "-translate-x-[calc(100%+1px)]",
