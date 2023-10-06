@@ -154,7 +154,7 @@ export const techCards = [
   {
     icon: IconOptimizely,
     name: "Optimizely",
-    description: "Years of experience: 4+",
+    description: "Years of experience: 1+",
   },
 ]
 

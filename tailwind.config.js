@@ -23,6 +23,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        clamp: 'clamp(1rem, 1vw, 1.5rem)'
+      },
       boxShadow: {
         container: "5px 35px 25px 15px rgba(0, 0, 0, 0.5)",
         darkaside: "27px 18px 36px -18px rgba(0, 0, 0, 0.4)",

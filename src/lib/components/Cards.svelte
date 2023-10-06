@@ -26,7 +26,7 @@
 </script>
 
 <div
-  class="grid 2xl:grid-cols-{cols} lg:grid-cols-2 gap-1 mt-5 group"
+  class="grid 2xl:grid-cols-{cols} xl:grid-cols-3 lg:grid-cols-2 gap-1 mt-5 group"
   on:mousemove={mousemoveHandler}
   role="presentation"
   use:inview={{
@@ -65,7 +65,7 @@
           {/if}
           <div class="{nameOnly ? '' : 'p-2'} dark:text-white text-neutral-500">
             {#if item.name}
-              <p class="{nameOnly ? 'text-lg' : 'text-2xl'} ">{item.name}</p>
+              <p class="{nameOnly ? 'text-lg' : 'text-clamp'} ">{item.name}</p>
             {/if}
             {#if item.level}
               <p class="text-sm"><b>Level: </b>{item.level}</p>
@@ -90,7 +90,7 @@
           {/if}
           <div class="p-2">
             {#if item.name}
-              <p class="text-2xl">{item.name}</p>
+              <p class="text-clamp">{item.name}</p>
             {/if}
             {#if item.level}
               <p class="text-sm"><b>Level: </b>{item.level}</p>
