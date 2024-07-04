@@ -281,6 +281,103 @@ export const labs = [
 
 export let projects = [
   {
+    name: "IskayPet",
+    position: "Senior Front-end Engineer",
+    logo: "/portfolio/iskaypet/logo.png",
+    company: "Contractor | Intersoftware",
+    date: "2024",
+    content: {
+      about: [
+        "One of the best team of people I've worked with.",
+        "It is a Salesforce Commerce Cloud-based project with a great and multi-national team.",
+        "There are 3 separate stores under the same umbrella: Kiwoko, Tiendanimal and Animalis - in Spanish, Portuguese and French.",
+        "Part of the front-end team focused on the growth. Worked on the checkout unification, and initial planning for the PDP unification.",
+      ],
+      responsibilities: [
+        "Refactoring code",
+        "Complex frontend components creation",
+        "Local inventory management (debugging)",
+        "Changes on ISML templates",
+        "Post-deploy support",
+        "Technical investigation and risk analysis",
+        "General good practices (Clean Code, GPDR, ADA, etc.)",
+        "Peer review on a daily basis",
+        "Agile environment",
+      ],
+      images: [
+        {
+          url: "/portfolio/iskaypet/screenshot.png",
+          title: "Animalis View",
+        },
+        {
+          url: "/portfolio/iskaypet/screenshot2.png",
+          title: "Kiwoko View",
+        },
+        {
+          url: "/portfolio/iskaypet/screenshot3.png",
+          title: "Tiendanimal View",
+        },
+      ],
+      tech: [
+        {
+          icon: IconSF,
+          name: "Salesforce Commerce Cloud",
+        },
+        {
+          icon: IconXML,
+          name: "ISML, XML",
+        },
+        {
+          icon: IconCSS,
+          name: "CSS",
+        },
+        {
+          icon: IconSass,
+          name: "SASS",
+        },
+        {
+          icon: IconJS,
+          name: "Javascript",
+        },
+        {
+          icon: IconJson,
+          name: "Restful APIs",
+        },
+        {
+          icon: IconJira,
+          name: "Jira",
+        },
+        {
+          icon: IconConfluence,
+          name: "Confluence",
+        },
+        {
+          icon: IconGit,
+          name: "Git",
+        },
+        {
+          icon: IconGithub,
+          name: "GitHub",
+          extraClass: "dark:[&>path]:fill-white",
+        },
+      ],
+      links: [
+        {
+          href: "https://animalis.com/",
+          name: "Animalis.com [FR]",
+        },
+        {
+          href: "https://tiendanimal.com/",
+          name: "Tiendanimal.com [ES]",
+        },
+        {
+          href: "https://kiwoko.com/",
+          name: "Kiwoko.com [ES]",
+        },
+      ],
+    },
+  },
+  {
     name: "the Walt Disney Company",
     position: "Senior Front-end Engineer",
     logo: "/portfolio/disney/logo.png",
