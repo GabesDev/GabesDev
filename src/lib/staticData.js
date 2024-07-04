@@ -284,6 +284,7 @@ export let projects = [
     name: "the Walt Disney Company",
     position: "Senior Front-end Engineer",
     logo: "/portfolio/disney/logo.png",
+    company: "Contractor | Adapt Talent",
     date: "2022 - 2023",
     content: {
       about: [
@@ -384,6 +385,7 @@ export let projects = [
     name: "Saks OFF 5th",
     position: "Senior Full-stack Engineer",
     logo: "/portfolio/saks/logo.png",
+    company: "Contractor | Stott and May",
     date: "2021",
     content: {
       about: [
@@ -460,6 +462,7 @@ export let projects = [
     name: "Yeti",
     position: "Senior Front-end Engineer",
     logo: "/portfolio/yeti/logo.png",
+    company: "Contractor | Stott and May",
     date: "2021",
     content: {
       about: [
@@ -531,6 +534,7 @@ export let projects = [
     name: "Deciem Projects",
     position: "Front-end Engineer",
     logo: "/portfolio/deciem/logo.png",
+    company: "Valtech",
     date: "2020 - 2021",
     content: {
       about: [
@@ -631,11 +635,12 @@ export let projects = [
     name: "Champion Projects",
     position: "Front-end Engineer",
     logo: "/portfolio/champion/logo-orijen.png",
+    company: "Valtech",
     date: "2019 - 2020",
     content: {
       about: [
         "The Champions Petfoods project was my first SFCC project.",
-        "The team was composed of a small but very efficient team (the same team present on the Champion Petfoods Projects).",
+        "The team was composed of a small but very efficient team (the same team present on the Deciem/theOrdinary Projects).",
         "It was a great learning experience.",
         "There were 3 separate stores under the same umbrella: Champion Petfoods, Orijen Petfoods, and Acana Petfoods.",
         "Each one of them had different designs and specifications.",
@@ -729,6 +734,7 @@ export let projects = [
     name: "Raid Vietnam",
     position: "Front-end Engineer",
     logo: "/portfolio/raid/logo.png",
+    company: "Valtech",
     date: "2019",
     content: {
       about: [
@@ -791,6 +797,7 @@ export let projects = [
     name: "SCJohnson",
     position: "Front-end Engineer",
     logo: "/portfolio/scjohnson/logo.png",
+    company: "Valtech",
     date: "2019",
     content: {
       about: [
@@ -856,6 +863,7 @@ export let projects = [
     name: "Advisian",
     position: "Front-end Engineer",
     logo: "/portfolio/advisian/logo.png",
+    company: "Valtech",
     date: "2019",
     content: {
       about: [
@@ -934,6 +942,7 @@ export let projects = [
     name: "BLG",
     position: "Front-end Engineer",
     logo: "/portfolio/blg/logo.png",
+    company: "Valtech",
     date: "2018 - 2019",
     content: {
       about: [
@@ -1026,6 +1035,7 @@ export let projects = [
     name: "General Mills",
     position: "Front-end Engineer",
     logo: "/portfolio/generalmills/logo.png",
+    company: "Valtech",
     date: "2018",
     content: {
       about: [
@@ -1097,6 +1107,7 @@ export let projects = [
     name: "Amica Senior Lifestyles",
     position: "Front-end Engineer",
     logo: "/portfolio/amica/logo.png",
+    company: "Valtech",
     date: "2018",
     content: {
       about: [
@@ -1174,6 +1185,7 @@ export let projects = [
     name: "Navico",
     position: "Front-end Engineer",
     logo: "/portfolio/navico/logo.png",
+    company: "Valtech",
     date: "2018",
     content: {
       about: [
@@ -1243,6 +1255,7 @@ export let projects = [
     name: "YahSat",
     position: "Front-end Engineer",
     logo: "/portfolio/yahsat/logo.png",
+    company: "Valtech",
     date: "2017",
     content: {
       about: [
@@ -1312,6 +1325,7 @@ export let projects = [
     name: "Brookfield",
     position: "Jr. Front-end Developer",
     logo: "/portfolio/brookfield/logo.png",
+    company: "Valtech",
     date: "2017",
     content: {
       about: [
@@ -1378,6 +1392,7 @@ export let projects = [
     name: "Bayer Brazil",
     position: "Jr. Front-end Developer",
     logo: "/portfolio/bayer/logo.png",
+    company: "Valtech",
     date: "2017",
     content: {
       about: [
@@ -1434,6 +1449,7 @@ export let projects = [
     name: "Samsung Brazil",
     position: "Intern Developer",
     logo: "/portfolio/samsung/logo.png",
+    company: "Valtech",
     date: "2016",
     content: {
       about: [
@@ -1493,6 +1509,7 @@ export let projects = [
     name: "Walmart Brazil",
     position: "Intern Developer",
     logo: "/portfolio/walmart/logo.png",
+    company: "Valtech",
     date: "2016",
     content: {
       about: [
@@ -1552,6 +1569,7 @@ export let projects = [
     name: "SamsClub Brazil",
     position: "Intern Developer",
     logo: "/portfolio/samsclub/logo.png",
+    company: "Valtech",
     date: "2016",
     content: {
       about: [

@@ -124,6 +124,7 @@
               class="w-20 h-20 mb-4 rounded-full"
             />
             <div class="text-left">
+              <p class="dark:text-neutral-300 text-neutral-400 text-xs">{project.company}</p>
               <p class="text-xl dark:text-white text-neutral-600">{project.name}</p>
               <p class="dark:text-neutral-300 text-neutral-400">{project.position}</p>
               <p class="text-sm">{project.date}</p>

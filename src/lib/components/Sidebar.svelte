@@ -128,7 +128,6 @@
             <p class="dark:text-white text-neutral-600 lg:text-xl">
               Senior FE Engineer
             </p>
-            <p>Developing since 2013</p>
           </div>
         </section>
 
