@@ -56,7 +56,7 @@ export const languages = [
     name: "Spanish",
     level: "B1",
     description:
-      "As a Portuguese speaker, Spanish comes with ease. <br> After traveling to Argentina and practicing the language, I believe I'd be able to work on a Spanish-speaking team (even though I'd fallback to Portuñol sometimes).",
+      "As a Portuguese speaker, Spanish comes with ease. <br> After working witha Spanish-speaking team, I realised I can understand pretty much everything I hear (even though I'd fallback to english most of the time when I needed to speak).",
   },
   {
     icon: IconFrance,
