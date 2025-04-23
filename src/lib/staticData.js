@@ -56,21 +56,21 @@ export const languages = [
     name: "Spanish",
     level: "B1",
     description:
-      "As a Portuguese speaker, Spanish comes with ease. <br> After working with a Spanish-speaking team, I realised I can understand pretty much everything I hear (even though I'd fallback to english most of the time when I needed to speak).",
+      "As a Portuguese speaker, Spanish feels natural to me. <br> After working with a Spanish-speaking team, I noticed I could understand pretty much everything I heard (even though I'd fall back to English most of the time when I needed to speak).",
   },
   {
     icon: IconFrance,
     name: "French",
     level: "B1",
     description:
-      "I can understand almost everything I hear, but I still face some issues when talking. I can work using this language on a French-speaking team.",
+      "I can understand almost everything I hear, but I still have some difficulty speaking. I can work using this language on a French-speaking team.",
   },
   {
     icon: IconItaly,
     name: "Italian",
     level: "A2",
     description:
-      "I understand most of what I hear in Italian, but I still can't express myself clearly. As a Portuguese speaker who understands Spanish and French, I could say I'd be able to work on an Italian-speaking team with some bilingual team members.",
+      "I understand most of what I hear in Italian, but I still can't express myself clearly. As a Portuguese speaker who understands Spanish and French, I believe I could work on an Italian-speaking team, especially if some team members are bilingual.",
   },
 ]
 
@@ -87,7 +87,7 @@ export const techCards = [
   },
   {
     icon: IconJS,
-    name: "Javascript",
+    name: "JavaScript",
     description: "Years of experience: 7+",
   },
   {
@@ -163,10 +163,7 @@ export const softSkills = [
     name: "Accountable",
   },
   {
-    name: "Available",
-  },
-  {
-    name: "Can cope well with pressure",
+    name: "Approachable",
   },
   {
     name: "Communicative",
@@ -187,10 +184,16 @@ export const softSkills = [
     name: "Resilient",
   },
   {
+    name: "Responsive",
+  },
+  {
     name: "Self-aware",
   },
   {
     name: "Self-learner",
+  },
+  {
+    name: "Works well under pressure",
   },
 ]
 
@@ -199,7 +202,7 @@ export const labs = [
     name: "Jokenpo [Multiplayer Game]",
     description: [
       "Own project ",
-      "Written to get used to the sveltekit, state, sockets, and servers.",
+      "Written to get familiar with SvelteKit, state management, sockets, and servers.",
     ],
     image: "jokenpo.png",
     tech: "SvelteKit, Socket.Io, Node.js",
@@ -210,7 +213,7 @@ export const labs = [
     name: "Matching Game [Game]",
     description: [
       "Tutorial project ",
-      "Written to get used to the sveltekit way of managing state and reactivity.",
+      "Written to understand how SvelteKit manages state and reactivity.",
     ],
     image: "memory.png",
     tech: "SvelteKit",
@@ -218,13 +221,13 @@ export const labs = [
     address: "https://memory.gabes.dev/",
   },
   {
-    name: "JSX Rederer [Code]",
+    name: "JSX Renderer [Code]",
     description: [
       "Tutorial Project ",
-      "Wrote a JSX renderer to understand the inner functionality of React.",
+      "Built a JSX renderer to better understand React's inner workings.",
     ],
     image: "code.png",
-    tech: "Javascript",
+    tech: "JavaScript",
     code: "https://github.com/GabesDev/jsx-renderer",
   },
   {
@@ -241,7 +244,7 @@ export const labs = [
     name: "Expensify [App]",
     description: [
       "Tutorial Project ",
-      "Fully functional app to study the Back-End integration, auth (log-in/sign-up) and React Native UI development",
+      "Fully functional app to study the Back-End integration, authentication (log-in/sign-up) and React Native UI development",
     ],
     image: "expensify.png",
     tech: "React Native, Firebase",
@@ -251,7 +254,7 @@ export const labs = [
     name: "AppStore UI [App]",
     description: [
       "Tutorial Project ",
-      "UI-focused APP, using nativewind (Tailwind for react native) and some other libraries.",
+      "UI-focused app, using NativeWind (Tailwind for React Native) and other libraries",
     ],
     image: "appstore.png",
     tech: "React Native, NativeWind, Expo",
@@ -261,7 +264,7 @@ export const labs = [
     name: "Animated Login UI [App]",
     description: [
       "Tutorial Project ",
-      "UI-focused APP, using nativewind (Tailwind for react native) and animation libraries.",
+      "UI-focused app, using NativeWind (Tailwind for React Native) and animation libraries",
     ],
     image: "login-animated.png",
     tech: "React Native, NativeWind, Expo, React Native Animated",
@@ -288,19 +291,19 @@ export let projects = [
     date: "2024",
     content: {
       about: [
-        "One of the best team of people I've worked with.",
+        "One of the best teams of people I've worked with.",
         "It is a Salesforce Commerce Cloud-based project with a great and multi-national team.",
-        "There are 3 separate stores under the same umbrella: Kiwoko, Tiendanimal and Animalis - in Spanish, Portuguese and French.",
-        "Part of the front-end team focused on the growth. Worked on the checkout unification, and initial planning for the PDP unification.",
+        "There are three separate stores under the same umbrella: Kiwoko, Tiendanimal, and Animalis, available in Spanish, Portuguese, and French.",
+        "Part of the front-end team focused on growth. Worked on checkout unification and initial planning for PDP unification.",
       ],
       responsibilities: [
         "Refactoring code",
-        "Complex frontend components creation",
+        "Creation of complex front-end components",
         "Local inventory management (debugging)",
         "Changes on ISML templates",
         "Post-deploy support",
         "Technical investigation and risk analysis",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
         "Peer review on a daily basis",
         "Agile environment",
       ],
@@ -337,11 +340,11 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJson,
-          name: "Restful APIs",
+          name: "RESTful APIs",
         },
         {
           icon: IconJira,
@@ -388,22 +391,22 @@ export let projects = [
         "One of the most interesting projects I've worked on.",
         "It was a Salesforce Commerce Cloud-based project with a huge team of engineers.",
         "I was part of the front-end team focused on the Web.",
-        "As time went by, different objectives were part of my development routine - such as proofs of concepts in new stacks, PWAs using OCAPI, experimental technologies, highly cached content, investigation and documentation, knowledge transfers and training, and even rebranding.",
+        "Over time, my development responsibilities evolved to include proofs of concept in new stacks, PWAs using OCAPI, experimental technologies, highly cached content, investigation and documentation, knowledge transfers and training, and even rebranding.",
         "Most of the third-party services had to be investigated for the rebranding project, so I frequently had to have conversations with external teams.",
       ],
       responsibilities: [
-        "Content-assets creation",
+        "Content asset creation",
         "Content slots and Custom objects management",
         "Complex components creation",
         "Local inventory management (debugging)",
         "Changes on ISML templates",
         "Post-deploy support",
         "Technical investigation and risk analysis",
-        "Development of PoC in experimental stacks",
-        "Development of PWA (with OCAPI) and High Cached Pages for the Disney+ shop project",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
-        "Investigation and Debugging of third-party services",
-        "Review, discussion, and correction of usability and accessibility on components",
+        "Development of proofs of concept in experimental stacks",
+        "Development of PWAs (using OCAPI) and highly cached pages for the Disney+ Shop project",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
+        "Investigation and debugging of third-party services",
+        "Review, discussion, and refinement of usability and accessibility in components",
         "Peer review on a daily basis",
         "Creation of functional, technical, and training documentation",
         "Agile environment",
@@ -442,11 +445,11 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJson,
-          name: "Restful APIs",
+          name: "RESTful APIs",
         },
         {
           icon: IconJira,
@@ -494,11 +497,11 @@ export let projects = [
       responsibilities: [
         "Post-deploy support",
         "Technical investigation and risk analysis",
-        "Solving issues in both Front and Backend",
-        "Working close to the QA team",
+        "Solving issues in both the front-end and back-end",
+        "Working closely with the QA team",
         "Knowledge-sharing and support for new team members",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
-        "Review, discussion, and correction of usability and accessibility on components",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
+        "Review, discussion, and refinement of usability and accessibility in components",
         "Peer review on a daily basis",
         "Creation of functional, technical, and training documentation",
         "Agile environment",
@@ -528,7 +531,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJira,
@@ -565,14 +568,14 @@ export let projects = [
       about: [
         "It was a Salesforce Commerce Cloud-based project with a small team of developers.",
         "I was part of the team focused on maintenance and post-deploy support.",
-        "This project had many front-end issues in both Javascript and CSS.",
-        "Even though I worked as a front-end engineer, there were backend bugs solved by me.",
+        "This project had many front-end issues in both JavaScript and CSS.",
+        "Although I worked as a front-end engineer, I also resolved back-end bugs.",
       ],
       responsibilities: [
         "Post-deploy support",
-        "Investigation and Debugging",
+        "Investigation and debugging",
         "Refactoring",
-        "General good practices (Clean Code, GPDR, ADA, etc)",
+        "General good practices (Clean Code, GDPR, ADA, etc)",
         "Agile environment",
       ],
       images: [
@@ -600,7 +603,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJira,
@@ -636,22 +639,22 @@ export let projects = [
     content: {
       about: [
         "The Deciem project was one of my favorite projects to work on.",
-        "The team was composed by a small but very efficient team, and the creativity involved in both the designs and functionality created the perfect balance between challenging and fun.",
+        "The team consisted of a small but highly efficient group, and the creativity involved in both the designs and functionality created the perfect balance between challenging and fun.",
         "There were 4 separate stores under the same umbrella: Deciem, Niod, the Ordinary, and Hylamide.",
-        "Each one of them had different designs and specifications.",
-        "I was part of the team since the beginning of the projects, and we created the stores from scratch on SFCC. That means all the components, functionalities, data, and configuration were made by us.",
+        "Each store featured unique designs and specifications.",
+        "I was part of the team from the beginning, and we built the stores from scratch on SFCC. That means all the components, functionalities, data, and configuration were made by us.",
       ],
       responsibilities: [
-        "Content-assets creation",
+        "Content asset creation",
         "Content slots and Custom objects management",
         "Local inventory management (debugging)",
         "Complex components creation",
         "Changes on ISML templates",
         "Post-deploy support",
         "Technical investigation and risk analysis",
-        "General good practices (Clean Code, GPDR, ADA, etc)",
-        "Investigation and Debugging of third-party services",
-        "Review, discussion, and correction of usability and accessibility on components",
+        "General good practices (Clean Code, GDPR, ADA, etc)",
+        "Investigation and debugging of third-party services",
+        "Review, discussion, and refinement of usability and accessibility in components",
         "Peer review on a daily basis",
         "Creation of functional, technical, and training documentation",
         "Agile environment",
@@ -689,11 +692,11 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJson,
-          name: "Restful APIs",
+          name: "RESTful APIs",
         },
         {
           icon: IconJira,
@@ -736,22 +739,22 @@ export let projects = [
     date: "2019 - 2020",
     content: {
       about: [
-        "The Champions Petfoods project was my first SFCC project.",
-        "The team was composed of a small but very efficient team (the same team present on the Deciem/theOrdinary Projects).",
+        "The Champion Petfoods project was my first SFCC project.",
+        "The team consisted of a small but highly efficient group (the same team present on the Deciem/theOrdinary Projects).",
         "It was a great learning experience.",
         "There were 3 separate stores under the same umbrella: Champion Petfoods, Orijen Petfoods, and Acana Petfoods.",
-        "Each one of them had different designs and specifications.",
-        "I was part of the team since the beginning of the projects, and we created the stores from scratch on SFCC.",
+        "Each store featured unique designs and specifications.",
+        "I was part of the team from the start, and we built the stores from scratch on SFCC.",
         "That means all the components, functionalities, data, and configuration were made by us.",
       ],
       responsibilities: [
-        "Content-assets creation",
+        "Content asset creation",
         "Content entry",
         "Content slots and Custom objects management",
         "Complex components creation",
         "Changes on ISML templates",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
-        "Review, discussion, and correction of usability and accessibility on components",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
+        "Review, discussion, and refinement of usability and accessibility in components",
         "Peer review on a daily basis",
         "Agile environment",
       ],
@@ -788,11 +791,11 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJson,
-          name: "Restful APIs",
+          name: "RESTful APIs",
         },
         {
           icon: IconJira,
@@ -835,10 +838,10 @@ export let projects = [
     date: "2019",
     content: {
       about: [
-        "This was one of the weirdest projects I've worked on. The team was really small, we weren't using GIT, and ramping up was pretty much a lonely walk.",
-        "It was a challenge - not only because I didn't understand a single word of what was in production, but the code was incredibly old and really messy.",
-        "This project had many front-end issues, mostly on CSS (that was a GIGANTIC 30k+ LINES FILE).",
-        "In addition to that, the fonts they wanted weren't compatible with the Vietnamese alphabet.",
+        "This was one of the weirdest projects I've worked on. The team was very small, we weren't using Git, and ramping up felt like a lonely walk in the dark.",
+        "It was a challenge: not only did I not understand a single word of what was in production, but the code was incredibly old and messy.",
+        "This project had many front-end issues, primarily in CSS — a MASSIVE 30,000+ LINE FILE.",
+        "In addition to that, the fonts they wanted were incompatible with the Vietnamese alphabet.",
       ],
       responsibilities: [
         "Constant bug fixing",
@@ -875,7 +878,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconSVN,
@@ -899,9 +902,9 @@ export let projects = [
     content: {
       about: [
         "Almost the same situation as the Raid project.",
-        "The code on this project was wild. It felt like at least at least a hundred engineers started refactoring it, and stopped after losing their minds.",
-        "Debugging and fixing the Arabic version of the website didn't really make things better (at least I learned a new alphabet!)",
-        "Did you know that, besides writing from right to left, the icons should also be positioned on the other side of the screen?",
+        "The code on this project was wild. It felt like at least a hundred engineers had started refactoring it, only to stop after losing their minds.",
+        "Debugging and fixing the Arabic version of the website added to the challenge — at least I learned a new alphabet!",
+        "Did you know that in addition to writing from right to left, icons must also be repositioned to the opposite side of the screen?",
         "Now imagine having to adjust everything manually because there are no universal rules. Yep, that was crazy.",
       ],
       responsibilities: [
@@ -941,7 +944,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconSVN,
@@ -970,8 +973,8 @@ export let projects = [
       responsibilities: [
         "Redesign the website",
         "Component development and documentation",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
-        "Review, discussion, and correction of usability and accessibility on components",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
+        "Review, discussion, and refinement of usability and accessibility in components",
         "Agile environment",
       ],
       images: [
@@ -1008,7 +1011,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconGit,
@@ -1044,12 +1047,12 @@ export let projects = [
     content: {
       about: [
         "The most challenging project I've ever worked on (so far).",
-        "Something went up with the planning and designing part of this project. Long story short - development started completely delayed, and it was up to the development team to deliver on an acceptable deadline.",
-        "Constant changes were asked by the client, and some of their third-party services had to be learned while developing.",
+        "Something went wrong in the planning and design phase of this project. Long story short - development started completely delayed, and it was up to the final development team to deliver on an acceptable deadline.",
+        "The client frequently requested changes, and we had to learn their third-party services on the fly during development.",
         "A lot of screen sharing happened while live-coding (on devTools) for non-tech people, to see if they were happy about the looks of a component, or the functionality of a menu.",
-        "Their search service would return a black-boxed markup, and all the styling had to be done using pre-defined classes and markups. And their final design was completely different from what we got out-of-the-box. Functionality included (!)",
-        "12-hour shifts were common at the end of the project. Fortunately, we were able to successfully deliver it.",
-        "Up to this day, I have nightmares about this project.",
+        "Their search service returned a black-box markup, requiring all styling to be done using predefined classes and structures. And their final design was completely different from what we got out-of-the-box. Functionality included (!)",
+        "Toward the end of the project, 12-hour shifts became the norm. Fortunately, we were able to successfully deliver it.",
+        "To this day, I still have nightmares about this project.",
       ],
       responsibilities: [
         "Constantly under pressure, as the deadline wasn't properly set and the scope would suffer drastic changes every week",
@@ -1057,9 +1060,9 @@ export let projects = [
         "Live coding with clients",
         "Discussions directly with the clients, to explain technical limitations (as support for IE6 in 2018) and try to limit the scope changes",
         "Implementing third-party services",
-        "General good practices (Clean Code, GPDR, ADA, etc)",
-        "Review, discussion, and correction of usability and accessibility on components",
-        "Not really agile environment",
+        "General good practices (Clean Code, GDPR, ADA, etc)",
+        "Review, discussion, and refinement of usability and accessibility in components",
+        "A less-than-agile environment",
       ],
       images: [
         {
@@ -1095,7 +1098,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconGit,
@@ -1136,8 +1139,8 @@ export let projects = [
     date: "2018",
     content: {
       about: [
-        "Legacy code. Touched by numerous agencies, and never refactored.",
-        "Full of front-end bugs, nothing seemed to render as it should - and old techniques would be used side by side with new ones.",
+        "Legacy code — handled by numerous agencies yet never refactored.",
+        "Full of front-end bugs: nothing rendered correctly, and old techniques were mixed with new ones. Float + Flex? Why not?",
         "It was a pretty big challenge to make things appear as they should.",
         "Took me a few days to wrap my head around it. Great learning experience.",
       ],
@@ -1180,7 +1183,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1208,16 +1211,16 @@ export let projects = [
     date: "2018",
     content: {
       about: [
-        "That was the first project I was part of since the start of development until the deployment.",
-        "It was a small team of developers, and most of the components were written by me.",
-        "At some point, due to my lack of experience at the time, I had to rewrite some of the containers and components integration because we were having some mismatching paddings and margins.",
-        "As it was a big CMS, authors should be able to use any component wherever they wanted. This project was an incredible learning experience.",
+        "This was the first project I worked on from the start of development to deployment.",
+        "I worked with a small team of developers and wrote most of the components myself.",
+        "At one point, due to my lack of experience at the time, I had to rewrite some container and component integrations to fix mismatched paddings and margins.",
+        "Since it was a large CMS, authors needed the flexibility to use any component anywhere. This project was an incredible learning experience.",
       ],
       responsibilities: [
         "Pixel-perfect design development",
         "Component development and documentation",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
-        "Review, discussion, and correction of usability and accessibility on components",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
+        "Review, discussion, and refinement of usability and accessibility in components",
         "Agile environment",
       ],
       images: [
@@ -1254,7 +1257,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1292,7 +1295,7 @@ export let projects = [
       responsibilities: [
         "Pixel-perfect design development",
         "Component development and documentation",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
         "Agile environment",
       ],
       images: [
@@ -1328,7 +1331,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1357,12 +1360,12 @@ export let projects = [
     content: {
       about: [
         "My first project using Sitecore.",
-        "I didn't stay long on this project, as the company reallocated devs and I was allocated to another one.",
+        "I didn't stay long on this project, as the company reallocated developers and assigned me to another one.",
       ],
       responsibilities: [
         "Part of the initial sprints",
         "Component development and documentation",
-        "General good practices (Clean Code, GPDR, ADA, etc.)",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
       ],
       images: [
         {
@@ -1398,7 +1401,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1429,7 +1432,7 @@ export let projects = [
         "My first international project.",
         "It was more of a learning experience.",
         "The company needed someone to do some late change requests and I was allocated as an evaluation, to see if I was ready to face some more complex tasks.",
-        "I believe it went well, considering since then I was always part of international projects.",
+        "I believe it went well, as I have consistently worked on international projects ever since.",
       ],
       responsibilities: [
         "Late change requests",
@@ -1461,7 +1464,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1493,8 +1496,8 @@ export let projects = [
     date: "2017",
     content: {
       about: [
-        "In this project, Bayer needed a redesign in their internal system.",
-        "I was mentored during almost the entire project, as I was learning documentation and UI guidelines.",
+        "In this project, Bayer required a redesign of their internal system.",
+        "I was mentored throughout most of the project while learning documentation, standards and UI guidelines.",
       ],
       responsibilities: ["Writing the UI style guide", "Front-end development"],
       images: [
@@ -1522,7 +1525,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1550,14 +1553,14 @@ export let projects = [
     date: "2016",
     content: {
       about: [
-        "It was a digital marketing campaign. I'd develop and dispatch e-mail marketing, and handle some other things.",
-        "The cool part of it was the freedom I had to choose the technologies I'd use on those deliverables.",
+        "This was a digital marketing campaign where I developed and dispatched email marketing materials, along with other related tasks.",
+        "The best part was the freedom to choose the technologies I used for these deliverables.",
       ],
       responsibilities: [
         "Developing and deploying landing pages",
-        "Developing and dispatching e-mail marketing campaigns",
-        "Integration between landing pages and e-mail databases",
-        "Handling segmentation, reports, analytics, data configuration and automation on Salesforce Marketing Cloud",
+        "Developing and sending email marketing campaigns",
+        "Integrating landing pages with email databases",
+        "Managing segmentation, reporting, analytics, data configuration, and automation within Salesforce Marketing Cloud",
       ],
       images: [
         {
@@ -1588,7 +1591,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1610,14 +1613,14 @@ export let projects = [
     date: "2016",
     content: {
       about: [
-        "It was a digital marketing campaign. I'd develop and dispatch e-mail marketing, and handle some other things.",
-        "The cool part of it was the freedom I had to choose the technologies I'd use on those deliverables.",
+        "This was a digital marketing campaign where I developed and dispatched email marketing materials, along with other tasks.",
+        "The best part was the freedom to choose the technologies for these deliverables.",
       ],
       responsibilities: [
         "Developing and deploying landing pages",
-        "Developing and dispatching e-mail marketing campaigns",
-        "Integration between landing pages and e-mail databases",
-        "Handling segmentation, reports, analytics, data configuration and automation on Salesforce Marketing Cloud",
+        "Developing and sending email marketing campaigns",
+        "Integrating landing pages with email",
+        "Managing segmentation, reporting, analytics, data configuration, and automation within Salesforce Marketing Cloud",
       ],
       images: [
         {
@@ -1648,7 +1651,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,
@@ -1670,21 +1673,21 @@ export let projects = [
     date: "2016",
     content: {
       about: [
-        "It was the biggest client in the company at the time. We'd handle not only the marketing campaigns but also the website, internal tools, landing pages, and much more.",
-        "We were basically responsible for the entire digital side of Samsclub Brazil.",
+        "At the time, this was the company's largest client. We managed not only marketing campaigns but also the website, internal tools, landing pages, and more.",
+        "We were responsible for the entire digital infrastructure of Sam's Club Brazil.",
         "As it had some late requests (as e-mails with segmented promotions), I developed some internal tools to make things easier for the team.",
-        "Initially they were made to myself, but they ended up being useful for the entire digital marketing department.",
+        "Initially, I created them for myself, but they ended up being useful to the entire digital marketing department.",
         "Some of them were: ",
-        "The Super Mail Maker 3000: Drag and drop pieces of the email for faster development and changes;",
-        "Digital Papyro: A on-the-fly information gatherer with keywords to find specific information on the clubs;",
-        "Automation scripts: Used for numerous boring tasks, such as images renaming, resizing, and cutting, manipulation of emails in big CSV files, and more;",
+        "The Super Mail Maker 3000: Drag and drop pieces of the email for faster development and changes",
+        "Digital Papyro: A on-the-fly information gatherer with keywords to find specific information on the clubs",
+        "Automation scripts: Used for numerous boring tasks, such as images renaming, resizing, and cutting, manipulation of emails in big CSV files, and more",
       ],
       responsibilities: [
         "Developing and deploying landing pages",
         "Maintenance and updates on the main website",
         "Developing and dispatching e-mail marketing campaigns",
         "Integration between landing pages and e-mail databases",
-        "Handling segmentation, reports, analytics, data configuration and automation on Salesforce Marketing Cloud",
+        "Managing segmentation, reporting, analytics, data configuration, and automation within Salesforce Marketing Cloud",
       ],
       images: [
         {
@@ -1715,7 +1718,7 @@ export let projects = [
         },
         {
           icon: IconJS,
-          name: "Javascript",
+          name: "JavaScript",
         },
         {
           icon: IconJQuery,

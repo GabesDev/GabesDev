@@ -11,14 +11,14 @@
     <p>
       With more than 15 years of experience in web development, I became a
       full-time front-end developer in 2016. I've worked in numerous fields of
-      web development - including but not restricted to mail marketing creation,
+      web development - including but not limited to email marketing campaigns and creation,
       development of internal tools for companies, development of complex
       e-commerce systems, and more.
     </p>
     <p>
       I'm also usually responsible for the training sessions for new team
-      members and the integration between the front and back-end. I make use of
-      my back-end and database knowledge for personal projects.
+      members and the integration between the front and back-end. 
+      I use my back-end and database knowledge for personal projects.
     </p>
     <p>
       In addition to code quality, I believe the success of a project is
