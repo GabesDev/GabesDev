@@ -88,7 +88,7 @@ export const techCards = [
   {
     icon: IconJS,
     name: "JavaScript",
-    description: "Years of experience: 7+",
+    description: "Years of experience: 10+",
   },
   {
     icon: IconNode,
@@ -98,7 +98,7 @@ export const techCards = [
   {
     icon: IconXML,
     name: "SOAP / REST APIs",
-    description: "Years of experience: 7+",
+    description: "Years of experience: 10+",
   },
   {
     icon: IconSass,
@@ -112,13 +112,13 @@ export const techCards = [
   },
   {
     icon: IconReact,
-    name: "ReactJS / React Native",
-    description: "Years of experience: 2+",
+    name: "ReactJS/NextJS",
+    description: "Years of experience: 5+",
   },
   {
     icon: IconSvelte,
     name: "Svelte",
-    description: "Years of experience: 2+",
+    description: "Years of experience: 3+",
   },
   {
     icon: IconVue,
@@ -138,7 +138,7 @@ export const techCards = [
   {
     icon: IconSF,
     name: "SFCC",
-    description: "Years of experience: 4+",
+    description: "Years of experience: 6+",
   },
   {
     icon: IconSitecore,
