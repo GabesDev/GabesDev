@@ -284,6 +284,106 @@ export const labs = [
 
 export let projects = [
   {
+    name: "Halfords",
+    position: "Lead Front-end Engineer",
+    logo: "/portfolio/halfords/logo.png",
+    company: "Contractor | VML",
+    date: "2024 - Current",
+    content: {
+      about: [
+        "A Salesforce Commerce Cloud-based project with multiple teams all over the world.",
+        "Huge project, complex architecture.",
+        "Started with legacy code, but we ended up upgrading the tech-stack with modern tools and practices.",
+        "Tested new approached, developed some PoCs",
+        "First project with AI involvement and experimentation as coding assistants.",
+        "Developed the new checkout with headless architecture based on SFCC PWA Kit.",
+        "Strong focus on testing, both unit and visual regression.",
+      ],
+      responsibilities: [
+        "Part of the entire process for the migration to a headless architecture - from the initial discussions to the final implementation",
+        "Also part of the loyalty team",
+        "Creation of complex and highly reusable front-end components",
+        "Creation and correction of unit tests and visual regression tests",
+        "Maintenance on legacy code (handlebars)",
+        "Spikes and investigation to document workflows and old code",
+        "Refactoring code",
+        "Changes on ISML templates",
+        "Post-deploy support",
+        "Technical investigation and risk analysis",
+        "General best practices (Clean Code, GDPR, ADA, etc.)",
+        "Peer review on a daily basis",
+        "Agile environment",
+      ],
+      images: [
+        {
+          url: "/portfolio/halfords/screenshot.png",
+          title: "Halfords homepage",
+        },
+      ],
+      tech: [
+        {
+          icon: IconSF,
+          name: "Salesforce Commerce Cloud",
+        },
+        {
+          icon: IconReact,
+          name: "React",
+        },
+        {
+          icon: IconPwa,
+          name: "PWA Kit",
+        },
+        {
+          icon: IconXML,
+          name: "ISML, XML",
+        },
+        {
+          icon: IconCSS,
+          name: "CSS",
+        },
+        {
+          icon: IconSass,
+          name: "SASS",
+        },
+        {
+          icon: IconJS,
+          name: "JavaScript",
+        },
+        {
+          icon: IconJson,
+          name: "RESTful APIs",
+        },
+        {
+          icon: IconJira,
+          name: "Jira",
+        },
+        {
+          icon: IconConfluence,
+          name: "Confluence",
+        },
+        {
+          icon: IconGit,
+          name: "Git",
+        },
+        {
+          icon: IconGithub,
+          name: "GitHub",
+          extraClass: "dark:[&>path]:fill-white",
+        },
+      ],
+      links: [
+        {
+          href: "https://www.halfords.com/",
+          name: "Halfords.com [UK]",
+        },
+        {
+          href: "https://www.halfords.ie/",
+          name: "Halfords.ie [IE]",
+        },
+      ],
+    },
+  },
+  {
     name: "IskayPet",
     position: "Senior Front-end Engineer",
     logo: "/portfolio/iskaypet/logo.png",
