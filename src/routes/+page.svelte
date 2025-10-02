@@ -1,6 +1,13 @@
 <script>
-  import { languages, softSkills, techCards } from "$lib/staticData"
+  import { languages, softSkills, techCards, projects } from "$lib/staticData"
   import CardContainer from "$lib/components/Cards.svelte"
+  
+  // Transform projects into client cards format
+  const clients = projects.map(project => ({
+    name: project.name,
+    image: project.logo,
+    link: `/portfolio?project=${project.name.replace(/\s+/g, '+')}`
+  }))
 </script>
 
 <main>
@@ -30,6 +37,13 @@
 
   <section
     class="p-10 border-t-2 border-solid dark:bg-neutral-800 bg-neutral-50 border-t-white/25"
+  >
+    <h2 class="mt-5 mb-10 text-2xl text-blue-400">Clients</h2>
+    <CardContainer cols={10} collection={clients} clientMode={true} />
+  </section>
+
+  <section
+    class="p-10 dark:bg-neutral-800 bg-neutral-50 "
   >
     <h2 class="mt-5 mb-10 text-2xl text-blue-400">Technologies</h2>
     <CardContainer cols={4} collection={techCards} />
