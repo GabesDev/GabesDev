@@ -294,9 +294,10 @@ export let projects = [
         "A Salesforce Commerce Cloud-based project with multiple teams all over the world.",
         "Huge project, complex architecture.",
         "Started with legacy code, but we ended up upgrading the tech-stack with modern tools and practices.",
-        "Tested new approached, developed some PoCs",
-        "First project with AI involvement and experimentation as coding assistants.",
-        "Developed the new checkout with headless architecture based on SFCC PWA Kit.",
+        "Tested new approaches, developed some PoCs",
+        "First project using and experimenting with code assistants and AI.",
+        "Development of the new checkout with headless architecture based on SFCC PWA Kit.",
+        "Heavy react-based project"
         "Strong focus on testing, both unit and visual regression.",
       ],
       responsibilities: [
@@ -313,6 +314,7 @@ export let projects = [
         "General best practices (Clean Code, GDPR, ADA, etc.)",
         "Peer review on a daily basis",
         "Agile environment",
+        "Investigation and creation of AI workflows and patterns to improve AI usage in multiple teams"
       ],
       images: [
         {
